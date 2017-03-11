@@ -1,4 +1,4 @@
-#Day 1
+#Day 1 learning navigator
 
 switch to day1 branch
 
