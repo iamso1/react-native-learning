@@ -9,6 +9,7 @@
 4. install android studio
 5. install genymotion
 6. create first project with react-native-cli
+
     ```
     react-native init [projectName]
     ```
