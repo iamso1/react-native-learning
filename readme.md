@@ -13,5 +13,3 @@
     ```
     react-native init [projectName]
     ```
-
-## Day 1: learning navigator
