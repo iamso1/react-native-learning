@@ -1,2 +1,7 @@
-#Day 1 note
+#Day 1
 
+switch to day1 branch
+
+```
+git checkout day1
+```
