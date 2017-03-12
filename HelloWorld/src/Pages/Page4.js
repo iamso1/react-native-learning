@@ -13,7 +13,7 @@ class Page3 extends Component {
     goToSpecificPage = () => {
         const { navigator } = this.props;
         var arr_Routes=navigator.getCurrentRoutes(); 
-        navigator.popToRoute(arr_Routes[1]);         
+        navigator.popToRoute(arr_Routes[1]); //this method will unmount every other scene after this scense
     };
     //go back to home page
     homePage = () => {
