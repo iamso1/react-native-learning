@@ -13,6 +13,13 @@ class Page1 extends Component {
             })
         }
     };
+    //go back to previous page
+    previousPage = () => {
+        Alert.alert('clicked');
+        //switch to page2
+        const { navigator } = this.props;
+        navigator.pop();
+    };
     render() {
         return (
             <View>
@@ -20,6 +27,7 @@ class Page1 extends Component {
                     Hi This is Home Page
                 </Text>
                 <Button onPress = {this.nextPage} title="Next Page"/>
+                <Button onPress = { this.previousPage } title="TEST Previous Page"  />
             </View>
         );
     }
