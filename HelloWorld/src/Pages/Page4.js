@@ -5,7 +5,6 @@ import Page1 from './Page1'
 class Page3 extends Component {
     //go back to previous page
     previousPage = () => {
-        Alert.alert('clicked');
         //switch to page3
         const { navigator } = this.props;
         navigator.pop();

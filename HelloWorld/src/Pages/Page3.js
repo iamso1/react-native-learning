@@ -1,14 +1,23 @@
 import React, {Component} from 'react';
 import { View, Text, Button, Alert } from 'react-native';
 
-import Page1 from './Page1'
+import Page4 from './Page4'
 class Page3 extends Component {
     //go back to previous page
     previousPage = () => {
-        Alert.alert('clicked');
         //switch to page2
         const { navigator } = this.props;
         navigator.pop();
+    };
+    //go to next page
+    nextPage = () => {
+        //switch to page4
+        const { navigator } = this.props;
+        if(navigator){
+            navigator.push({
+                component:Page4,
+            })
+        }
     };
     //go back to home page
     homePage = () => {
@@ -19,8 +28,9 @@ class Page3 extends Component {
         return (
             <View>
                 <Text>
-                   Hello this is the last Page
+                   Hello this is Page 3
                 </Text>
+                <Button title="Next Page" onPress = { this.nextPage } />
                 <Button title="Previous Page" onPress = { this.previousPage } />
                 <Button title="Home Page" onPress = { this.homePage } />
             </View>
