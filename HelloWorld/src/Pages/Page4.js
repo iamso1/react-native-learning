@@ -15,6 +15,11 @@ class Page3 extends Component {
         var arr_Routes=navigator.getCurrentRoutes(); 
         navigator.popToRoute(arr_Routes[1]);         
     };
+    //go back to home page
+    homePage = () => {
+        const { navigator } = this.props;
+        navigator.popToTop(); //this method will unmount every other scene
+    };
     render() {
         return (
             <View>
@@ -23,6 +28,7 @@ class Page3 extends Component {
                 </Text>
                 <Button title="Previous Page" onPress = { this.previousPage } />
                 <Button title="Go To Page 2" onPress = { this.goToSpecificPage } />
+                <Button title="Home Page" onPress = { this.homePage } />
             </View>
         );
     }

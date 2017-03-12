@@ -19,11 +19,6 @@ class Page3 extends Component {
             })
         }
     };
-    //go back to home page
-    homePage = () => {
-        const { navigator } = this.props;
-        navigator.popToTop(); //this method will unmount every other scene
-    };
     render() {
         return (
             <View>
@@ -32,7 +27,6 @@ class Page3 extends Component {
                 </Text>
                 <Button title="Next Page" onPress = { this.nextPage } />
                 <Button title="Previous Page" onPress = { this.previousPage } />
-                <Button title="Home Page" onPress = { this.homePage } />
             </View>
         );
     }
