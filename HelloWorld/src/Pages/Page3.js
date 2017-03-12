@@ -10,14 +10,10 @@ class Page3 extends Component {
         const { navigator } = this.props;
         navigator.pop();
     };
-    //go back to previous page
+    //go back to home page
     homePage = () => {
         const { navigator } = this.props;
-        if(navigator){
-            navigator.push({
-                component:Page1
-            })
-        }
+        navigator.popToTop(); //this method will unmount every other scene
     };
     render() {
         return (
