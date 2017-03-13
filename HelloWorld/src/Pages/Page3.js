@@ -20,10 +20,11 @@ class Page3 extends Component {
         }
     };
     render() {
+        const { text } = this.props;
         return (
             <View>
                 <Text>
-                   Hello this is Page 3
+                   Hello { text }
                 </Text>
                 <Button title="Next Page" onPress = { this.nextPage } />
                 <Button title="Previous Page" onPress = { this.previousPage } />

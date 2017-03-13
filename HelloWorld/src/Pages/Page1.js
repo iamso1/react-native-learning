@@ -16,7 +16,7 @@ class Page1 extends Component {
         return (
             <View>
                 <Text>
-                    Hi This is Home Page
+                    Hi This is Home Page!!!
                 </Text>
                 <Button onPress = {this.nextPage} title="Next Page"/>
             </View>
